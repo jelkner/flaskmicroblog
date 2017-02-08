@@ -14,6 +14,14 @@ def index():
         {
             'author': {'nickname': 'Marisol'},
             'body': "I hope we get a snow day before Winter ends!"
+        },
+        {
+            'author': {'nickname': 'Rebecca'},
+            'body': 'Dreamers still dreaming in the age of Trump!'
+        },
+        {
+            'author': {'nickname': 'Elijshia'},
+            'body': 'The struggle continues!'
         }
     ]
-    return render_template('index.html', title='Home', user=user, posts=posts)
+    return render_template('index.html', user=user, posts=posts)
